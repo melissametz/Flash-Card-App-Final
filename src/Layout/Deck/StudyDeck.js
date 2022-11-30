@@ -49,7 +49,7 @@ function StudyDeck() {
     );
   }
 
-  //added breadcrumb nav back to home and styling
+  //added styling and removed breadcrumb
   return (
     <div>
       <div className="d-flex justify-content-start list-group-item border-0">
