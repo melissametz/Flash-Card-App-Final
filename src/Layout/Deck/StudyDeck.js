@@ -52,20 +52,6 @@ function StudyDeck() {
   //added breadcrumb nav back to home and styling
   return (
     <div>
-      <nav aria-label="breadcrumb">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item">
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li className="breadcrumb-item">
-            <Link to={`/decks/${deckId}`}>{deck.name}</Link>
-          </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            Study
-          </li>
-        </ol>
-      </nav>
-
       <div className="d-flex justify-content-start list-group-item border-0">
         <h1>
           <span>Study</span>: <span>{deck.name}</span>
