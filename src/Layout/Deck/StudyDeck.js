@@ -49,9 +49,9 @@ function StudyDeck() {
     );
   }
 
-  //added breadcrumb nav back to home and styling
+  //updated return and added breadcrumb nav
   return (
-    <div>
+    <div className="container">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -65,22 +65,14 @@ function StudyDeck() {
           </li>
         </ol>
       </nav>
-
-      <div className="d-flex justify-content-start list-group-item border-0">
-        <h1>
-          <span>Study</span>: <span>{deck.name}</span>
-        </h1>
-      </div>
-      <div className="d-flex justify-content-start list-group-item border-0">
-        <StudyCard
-          card={card}
-          currentCardIndex={currentCardIndex}
-          setShowCard={setShowCard}
-          showCard={showCard}
-          handleNext={handleNext}
-          cards={deck.cards}
-        />
-      </div>
+      <StudyCard
+        card={card}
+        currentCardIndex={currentCardIndex}
+        setShowCard={setShowCard}
+        showCard={showCard}
+        handleNext={handleNext}
+        cards={deck.cards}
+      />
     </div>
   );
 }
